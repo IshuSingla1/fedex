@@ -210,6 +210,8 @@ module Fedex
               xml.SequenceNumber @mps[:sequence_number]
             else
               xml.GroupPackageCount 1
+              xml.SequenceNumber 1
+              xml.GroupNumber 1
             end
             if package[:insured_value]
               xml.InsuredValue{
