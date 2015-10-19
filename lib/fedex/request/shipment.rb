@@ -12,7 +12,7 @@ module Fedex
         @label_specification = {
           :label_format_type => 'COMMON2D',
           :image_type => 'PDF',
-          :label_stock_type => 'PAPER_LETTER'
+          :label_stock_type => 'PAPER_8.5X11_TOP_HALF_LABEL'
         }
         @label_specification.merge! options[:label_specification] if options[:label_specification]
         @customer_specified_detail = options[:customer_specified_detail] if options[:customer_specified_detail]
