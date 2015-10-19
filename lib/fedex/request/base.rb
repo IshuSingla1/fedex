@@ -90,10 +90,10 @@ module Fedex
         xml.ClientDetail{
           xml.AccountNumber @credentials.account_number
           xml.MeterNumber @credentials.meter
-          xml.Localization{
-            xml.LanguageCode 'en' # English
-            xml.LocaleCode   'us' # United States
-          }
+          #xml.Localization{
+          #  xml.LanguageCode 'en' # English
+          #  xml.LocaleCode   'us' # United States
+          #}
         }
       end
 
